@@ -55,6 +55,12 @@ class MainActivity : AppCompatActivity() {
             Log.d( "변수", name1 ) // 내부에 들어있는 박철수가 출력 되겠지
             Log.d( "변수", name2 ) // 이러면 도치가 출력되겠지
 
+
+            val address = "서울시 구로구 살아염"
+
+            Toast.makeText(this, address, Toast.LENGTH_SHORT).show()
+
+
         }
 
 
