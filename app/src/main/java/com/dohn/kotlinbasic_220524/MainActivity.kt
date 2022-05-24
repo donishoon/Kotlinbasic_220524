@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 
 //           var / val로 기록 공간(변수) 만들기
+
             var name1 : String
             val name2 : String
 
@@ -47,6 +48,12 @@ class MainActivity : AppCompatActivity() {
             name1 = "박철수"
 //            name2 = "끙아"
 
+//            name1 = 1234
+
+//            name1, name2에 기록한 값 로그로 찍어보기
+
+            Log.d( "변수", name1 ) // 내부에 들어있는 박철수가 출력 되겠지
+            Log.d( "변수", name2 ) // 이러면 도치가 출력되겠지
 
         }
 
