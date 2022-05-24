@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
         btnVariable.setOnClickListener {
 
 //          여기는 변수 문법 연습 (주석 - Ctrl + / )
@@ -64,6 +63,17 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+        btnCondition.setOnClickListener {
+
+            val userAge = 35 // Int 형태로 자동 형태 완성
+
+//            나이가 20살 이상이라면? => "성인입니다" 토스트로
+//            그렇지 않다면? => "미성년자입니다." 토스트로
+
+            
+
+        }
 
     }
 }
