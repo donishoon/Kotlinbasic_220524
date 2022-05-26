@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         btnCondition.setOnClickListener {
 
-            val userAge = 1 // Int 형태로 자동 형태 완성
+            val userAge = 15 // Int 형태로 자동 형태 완성
 
 //            나이가 20살 이상이라면? => "성인입니다" 토스트로
             if ( userAge >= 20 ) {
