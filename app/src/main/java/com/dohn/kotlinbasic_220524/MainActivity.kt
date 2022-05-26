@@ -62,8 +62,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
-
         btnCondition.setOnClickListener {
 
             val userAge = 15 // Int 형태로 자동 형태 완성
@@ -120,6 +118,20 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+//        복사 버튼이 눌리면 > 입력된 내용을 받아서 > 텍스트뷰에 반영
+
+        btnCopy.setOnClickListener {
+
+//            (edtMeessage에)입력된 내용 (text 속성에 들어있는 값)을 기억 해야 > 텍스트뷰에 적을 수 있다.
+//            변수에 담아두자
+
+            val inputMessage = edtMessage.text.toString()
+
+            txtMessage.text = inputMessage
+
+        }
+
 
     }
 }
