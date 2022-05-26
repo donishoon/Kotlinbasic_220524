@@ -88,12 +88,6 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-
-
-
-
-
-
 //            그렇지 않다면? => "미성년자입니다." 토스트로
             else {
 
@@ -101,6 +95,28 @@ class MainActivity : AppCompatActivity() {
                 
             }
 
+//            조건식 논리 연산 예시
+
+//            1. 급여 높음 2. 거리가 가까움 3. 근로시간이 적으면
+
+            val salary = 7800
+            val minutes = 80
+            val workHour = 35
+
+//            연봉 4000 이상 AND 거리는 50분 이내내
+
+            if ( salary >= 4000 && minutes > 50) {
+                Log.d("조건문", "연봉과 거리 모두 만족")
+            }
+
+//            거리가 20분 이내 or 근무시간 40시간 이내
+            if ( minutes < 20 || workHour < 40 ) {
+                Log.d("조건문연습", "거리나 근무시간 만족")
+            }
+
+            if ( !(workHour < 50) ) {
+                Log.d("조건문 not", "근무시간 빼고 다 좋아")
+            }
 
 
         }
