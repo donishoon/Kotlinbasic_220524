@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         btnCondition.setOnClickListener {
 
-            val userAge = 12 // Int 형태로 자동 형태 완성
+            val userAge = 15 // Int 형태로 자동 형태 완성
 
 //            나이가 20살 이상이라면? => "성인입니다" 토스트로
             if ( userAge >= 20 ) {
@@ -74,7 +74,26 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
 
             }
-            
+
+            else if ( userAge >= 14 ) {
+
+                Toast.makeText(this, "초딩입니다", Toast.LENGTH_SHORT).show()
+
+            }
+
+
+            else if ( userAge >= 17 ) {
+
+                Toast.makeText(this, "고등학생입니다", Toast.LENGTH_SHORT).show()
+
+            }
+
+
+
+
+
+
+
 //            그렇지 않다면? => "미성년자입니다." 토스트로
             else {
 
